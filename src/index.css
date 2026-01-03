@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 30 10% 10%;
+
+    --card: 40 20% 96%;
+    --card-foreground: 30 10% 10%;
+
+    --popover: 40 20% 98%;
+    --popover-foreground: 30 10% 10%;
+
+    --primary: 30 10% 12%;
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 35 15% 92%;
+    --secondary-foreground: 30 10% 15%;
+
+    --muted: 35 10% 90%;
+    --muted-foreground: 30 5% 45%;
+
+    --accent: 25 60% 45%;
+    --accent-foreground: 40 20% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 25 60% 45%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --copper: 25 60% 45%;
+    --copper-light: 25 50% 55%;
+    --copper-dark: 25 70% 35%;
+    --cream: 40 30% 96%;
+    --cream-dark: 40 20% 90%;
+    --charcoal: 30 10% 12%;
+    --charcoal-light: 30 8% 25%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(30 10% 8%) 0%, hsl(30 15% 18%) 100%);
+    --gradient-copper: linear-gradient(135deg, hsl(25 60% 45%) 0%, hsl(25 70% 35%) 100%);
+    --gradient-cream: linear-gradient(180deg, hsl(40 30% 96%) 0%, hsl(40 20% 92%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(30 10% 10% / 0.08);
+    --shadow-md: 0 8px 24px -4px hsl(30 10% 10% / 0.12);
+    --shadow-lg: 0 16px 48px -8px hsl(30 10% 10% / 0.15);
+    --shadow-copper: 0 8px 24px -4px hsl(25 60% 45% / 0.25);
+
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 10% 8%;
+    --foreground: 40 20% 95%;
+
+    --card: 30 10% 12%;
+    --card-foreground: 40 20% 95%;
+
+    --popover: 30 10% 10%;
+    --popover-foreground: 40 20% 95%;
+
+    --primary: 40 20% 95%;
+    --primary-foreground: 30 10% 10%;
+
+    --secondary: 30 8% 18%;
+    --secondary-foreground: 40 20% 90%;
+
+    --muted: 30 8% 20%;
+    --muted-foreground: 35 10% 60%;
+
+    --accent: 25 60% 50%;
+    --accent-foreground: 40 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 8% 20%;
+    --input: 30 8% 20%;
+    --ring: 25 60% 50%;
+
+    --copper: 25 60% 50%;
+    --copper-light: 25 50% 60%;
+    --charcoal: 40 20% 95%;
+    --charcoal-light: 40 15% 80%;
+    --cream: 30 10% 15%;
+    --cream-dark: 30 10% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient-copper {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-copper);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-cream {
+    background: var(--gradient-cream);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-copper-glow {
+    box-shadow: var(--shadow-copper);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-medium tracking-wide uppercase text-sm transition-smooth hover:bg-charcoal-light;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-8 py-3 bg-accent text-accent-foreground font-medium tracking-wide uppercase text-sm transition-smooth hover:opacity-90 shadow-copper-glow;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-medium tracking-wide uppercase text-sm transition-smooth hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .product-card {
+    @apply bg-card rounded-lg overflow-hidden transition-smooth hover:shadow-elegant hover:-translate-y-1;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-semibold text-foreground;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-lg md:text-xl max-w-2xl;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent));
+}
