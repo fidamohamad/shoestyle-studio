@@ -233,7 +233,7 @@ const ProductDetail = () => {
               </div>
 
               {/* Features */}
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t">
+{/*              <div className="grid grid-cols-3 gap-4 pt-6 border-t">
                 <div className="text-center">
                   <Truck className="h-6 w-6 mx-auto mb-2 text-accent" />
                   <p className="text-sm font-medium">Free Shipping</p>
@@ -249,7 +249,7 @@ const ProductDetail = () => {
                   <p className="text-sm font-medium">30-Day Returns</p>
                   <p className="text-xs text-muted-foreground">Easy returns</p>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
 

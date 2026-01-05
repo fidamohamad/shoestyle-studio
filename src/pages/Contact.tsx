@@ -59,7 +59,7 @@ const Contact = () => {
                   {
                     icon: Mail,
                     title: 'Email Us',
-                    details: ['figover@googlemail.com', 'support@Kynsneaker.com'],
+                    details: ['iqbal@figover.com'],
                   },
                 ].map((item, index) => (
                   <div
@@ -108,7 +108,7 @@ const Contact = () => {
                       id="name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Doe"
+                      placeholder="David warner"
                       required
                       className="mt-1"
                     />
@@ -120,7 +120,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      placeholder="john@example.com"
+                      placeholder="davidwarner@gmail.com"
                       required
                       className="mt-1"
                     />

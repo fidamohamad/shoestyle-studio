@@ -5,7 +5,7 @@ const collections = [
   {
     name: 'Formal Elegance',
     description: 'Premium leather for special occasions',
-    image: 'https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&h=800&fit=crop',
+    image: '/highheel.jpg',
     category: 'Formal',
   },
   {

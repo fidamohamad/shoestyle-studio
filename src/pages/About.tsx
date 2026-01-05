@@ -13,10 +13,9 @@ const About = () => {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-copper blur-3xl" />
         </div>
         <div className="container-custom relative z-10 text-center">
-          <h1 className="section-title text-primary-foreground mb-6">Our Story</h1>
-          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
-            Founded in 2010, Shoes Wear has been dedicated to crafting premium footwear that
-            combines timeless style with exceptional comfort.
+          <h1 className="section-title text-primary-foreground mb-6 ">Our Story</h1>
+          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto text-justify">
+            Founded in 2025, KynSneaker was born out of a passion for high-performance footwear and iconic style. We don't just list shoes; we curate them. Our team scours the global market to bring you a hand-picked selection of premium sneakers and formal wear, connecting you directly with the world's most trusted brands.
           </p>
         </div>
       </section>
@@ -51,8 +50,8 @@ const About = () => {
                 className="rounded-2xl shadow-elegant"
               />
               <div className="absolute -bottom-6 -left-6 bg-background p-6 rounded-xl shadow-elegant">
-                <p className="text-4xl font-display font-bold text-accent">14+</p>
-                <p className="text-muted-foreground">Years of Excellence</p>
+                <p className="text-4xl font-display font-bold text-accent">50+</p>
+                <p className="text-muted-foreground">Global Brands</p>
               </div>
             </div>
           </div>
@@ -103,26 +102,26 @@ const About = () => {
       {/* Team */}
       <section className="py-20">
         <div className="container-custom text-center">
-          <h2 className="section-title mb-4">Meet Our Team</h2>
+          <h2 className="section-title mb-4">Luxury for Every Step</h2>
           <p className="section-subtitle mx-auto mb-12">
-            Passionate people dedicated to bringing you the best footwear
+            Explore our hand-picked selection of top-tier brands for every style and occasion.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                name: 'James Anderson',
-                role: 'Founder & CEO',
-                image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop',
+                name: 'Prada brand',
+                // role: 'Founder & CEO',
+                image: '/prada.jpg',
               },
               {
-                name: 'Sarah Williams',
-                role: 'Head of Design',
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop',
+                name: 'Adidas brand',
+                // role: 'Head of Design',
+                image: '/adiddas.jpeg',
               },
               {
-                name: 'Michael Chen',
-                role: 'Master Craftsman',
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop',
+                name: 'Puma brand',
+                // role: 'Master Craftsman',
+                image: 'puma.jpeg',
               },
             ].map((member, index) => (
               <div
@@ -133,7 +132,7 @@ const About = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
+                  className="w-48 h-48 rounded-full mx-auto mb-4"
                 />
                 <h3 className="font-display text-xl font-semibold">{member.name}</h3>
                 <p className="text-muted-foreground">{member.role}</p>

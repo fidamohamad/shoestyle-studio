@@ -60,7 +60,7 @@ export const Header = () => {
           <Link to="/" className="flex items-center gap-2">
             <span className="font-display text-xl md:text-2xl font-bold text-foreground tracking-tight">
             <img 
-              src="/logo3.png" 
+              src="/main-logo.png" 
               alt="KynSneaker Logo" 
               className="w-[100px] h-[100px] object-contain" 
             />

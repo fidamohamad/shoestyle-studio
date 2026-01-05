@@ -12,11 +12,15 @@ export const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="inline-block">
               <span className="font-display text-2xl font-bold">
-                Kyn<span className="text-copper">Sneaker</span>
+                <img 
+                src="/main-logo.png" 
+                alt="KynSneaker Logo" 
+                className="w-[100px] h-[100px] object-contain" 
+                />
               </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Crafting premium footwear since 2010. We believe everyone deserves to walk in comfort and style.
+              Crafting premium footwear since 2025. We believe everyone deserves to walk in comfort and style.
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-primary-foreground/70 hover:text-copper transition-smooth">
@@ -56,7 +60,7 @@ export const Footer = () => {
             <h4 className="font-display text-lg font-semibold mb-4">Contact Us</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">
-                <MapPin className="h-4 w-4 text-copper" />
+                <MapPin className="h-5 w-5 text-copper" />
                 <span>Vesivärava tn 50-301, Kesklinna, 10152 Tallinn, Estonia</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/70">

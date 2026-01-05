@@ -48,16 +48,16 @@ export const Hero = () => {
             {/* Stats */}
             <div className="flex gap-8 justify-center lg:justify-start pt-8 border-t border-primary-foreground/10">
               <div>
-                <p className="text-3xl font-display font-bold text-primary-foreground">15K+</p>
-                <p className="text-primary-foreground/50 text-sm">Happy Customers</p>
+                <p className="text-3xl font-display font-bold text-primary-foreground">1,000+</p>
+                <p className="text-primary-foreground/50 text-sm">Products Reviewed</p>
               </div>
               <div>
-                <p className="text-3xl font-display font-bold text-primary-foreground">200+</p>
-                <p className="text-primary-foreground/50 text-sm">Shoe Designs</p>
+                <p className="text-3xl font-display font-bold text-primary-foreground">50+</p>
+                <p className="text-primary-foreground/50 text-sm">Top Brands Compared</p>
               </div>
               <div>
-                <p className="text-3xl font-display font-bold text-primary-foreground">14</p>
-                <p className="text-primary-foreground/50 text-sm">Years Experience</p>
+                <p className="text-3xl font-display font-bold text-primary-foreground">Daily</p>
+                <p className="text-primary-foreground/50 text-sm">Price Updates</p>
               </div>
             </div>
           </div>

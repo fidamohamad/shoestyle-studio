@@ -23,9 +23,9 @@ export const products: Product[] = [
     name: "Classic Oxford Leather",
     price: 189,
     originalPrice: 229,
-    image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&h=600&fit=crop",
+    image: "/highheel.jpg",
     images: [
-      "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=800&h=800&fit=crop",
+      "/highheel.jpg",
       "https://images.unsplash.com/photo-1608667508764-33cf0726b13a?w=800&h=800&fit=crop",
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop",
     ],
