@@ -59,7 +59,11 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="font-display text-xl md:text-2xl font-bold text-foreground tracking-tight">
-              Kyn<span className="text-accent">Sneaker</span>
+            <img 
+              src="/logo3.png" 
+              alt="KynSneaker Logo" 
+              className="w-[100px] h-[100px] object-contain" 
+            />
             </span>
           </Link>
 
