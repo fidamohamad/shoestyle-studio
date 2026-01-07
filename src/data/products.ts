@@ -20,7 +20,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "1",
-    name: "Classic Oxford Leather eman",
+    name: "Classic Oxford Leather",
     price: 189,
     originalPrice: 229,
     image: "/highheel.jpg",
