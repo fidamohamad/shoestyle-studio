@@ -1,10 +1,16 @@
-import { categories } from '@/data/products';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
+// 1. Define the Category interface here
+interface Category {
+  name: string;
+  count: number;
+}
+
 interface ProductFiltersProps {
+  categories: Category[]; // 2. Add this to your props interface
   selectedCategory: string;
   onCategoryChange: (category: string) => void;
   priceRange: [number, number];
@@ -16,6 +22,7 @@ interface ProductFiltersProps {
 const sizes = ['5', '6', '7', '8', '9', '10', '11', '12', '13'];
 
 export const ProductFilters = ({
+  categories, // 3. Destructure categories from props
   selectedCategory,
   onCategoryChange,
   priceRange,
@@ -41,6 +48,7 @@ export const ProductFilters = ({
           </AccordionTrigger>
           <AccordionContent>
             <div className="space-y-3 pt-2">
+              {/* 4. This will now use the LIVE data from your API */}
               {categories.map((category) => (
                 <button
                   key={category.name}
@@ -70,8 +78,8 @@ export const ProductFilters = ({
                 value={priceRange}
                 onValueChange={(value) => onPriceChange(value as [number, number])}
                 min={0}
-                max={300}
-                step={10}
+                max={50000} // Adjusted to match your shop's max price
+                step={100}
                 className="mb-4"
               />
               <div className="flex justify-between text-sm text-muted-foreground">
